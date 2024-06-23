@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="assets\css\lab-2.css">
+    <script src="assets\js\converter.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="fortune_generator.html">Fortune Generator</a></li>
+                <li><a href="convert.html">Currency Converter</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+        <h1>My Currency Converter</h1>
+    </header>
+    <section>
+        <p>Insert a number in one of the currency fields, and it will be converted to the values of the other currencies.</p>
+        <form id="converterForm">
+            <label for="usd">USD:</label>
+            <input type="number" id="usd" name="usd" step="0.01" oninput="convertCurrency('usd')"><br>
+
+            <label for="gbp">GBP:</label>
+            <input type="number" id="gbp" name="gbp" step="0.01" oninput="convertCurrency('gbp')"><br>
+
+            <label for="cad">CAD:</label>
+            <input type="number" id="cad" name="cad" step="0.01" oninput="convertCurrency('cad')"><br>
+
+            <label for="eur">EUR:</label>
+            <input type="number" id="eur" name="eur" step="0.01" oninput="convertCurrency('eur')"><br>
+
+            <label for="aud">AUD:</label>
+            <input type="number" id="aud" name="aud" step="0.01" oninput="convertCurrency('aud')"><br>
+        </form>
+    </section>
+    <footer>
+        <p>Created by Md. Naimuzzaman Fahim</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="assets\css\lab-2.css">
+    <script src="assets\js\quiz.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="fortune_generator.html">Fortune Generator</a></li>
+                <li><a href="convert.html">Currency Converter</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+        <h1>Multiple Choice Quiz</h1>
+    </header>
+    <section>
+        <label for="numQuestions">Number of questions:</label>
+        <input type="number" id="numQuestions" name="numQuestions" value="5" min="1" max="10">
+        <button onclick="startQuiz()">Start Quiz</button>
+
+        <div id="quizContainer"></div>
+    </section>
+    <footer>
+        <p>Created by Md. Naimuzzaman Fahim</p>
+    </footer>
+</body>
+
+</html>
